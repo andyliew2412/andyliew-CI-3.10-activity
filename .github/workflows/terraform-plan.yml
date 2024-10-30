@@ -1,12 +1,17 @@
 name: Terraform Plan
 
 on:
+<<<<<<< HEAD
   push:
     branches:
         - main
     pull_request:
     branches: 
         - main
+=======
+  pull_request:
+    branches: [ "main" ]
+>>>>>>> c03d225 (add terraform-plan file)
     paths:
       - 'terraform/*'
 
