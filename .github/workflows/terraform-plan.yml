@@ -1,11 +1,14 @@
 name: Terraform Plan
 
 on:
-    pull_request:
-      branches: 
+  push:
+    branches:
         - main
-      paths:
-        - 'terraform/*'
+    pull_request:
+    branches: 
+        - main
+    paths:
+      - 'terraform/*'
 
 jobs:
   Terraform-Plan:
